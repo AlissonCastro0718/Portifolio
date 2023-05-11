@@ -5,7 +5,51 @@
 
 /* COR INTERESSANTE:#1F4E51 */
 
-/* h1{
+:root{
+    --COR-AZUL:#1F4E51 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-box{
+    display: flex;
+}
+.img{
+    width: 75vw;
+    height: 100vh;
+}
+
+.header{
+    color:#1F4E51;
+    width: 25vw;
+    text-align: center;
+}
+.header ul{
+    padding-top:  25vh;
+    list-style: none;
+
+}
+li{
+    font-weight: 700;
+    
+}
+li + li{
+    padding-top:10px ;
+    
+}
+.Logo{
+    padding-top: 20px;
+    width: 150px;
+}
+
+h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-} */
+    font-size: 2.5em;
+
+}
