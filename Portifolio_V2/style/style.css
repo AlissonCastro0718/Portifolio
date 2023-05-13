@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* Fonte Open-Sans */
+
+
+:root{
+    --COR-AZUL:#1F4E51 ;
+    --COR-AZUL-CLARO: #437477;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+overflow-y: hidden;   /*tira um pequeno exesso que criava uma barra de rolagem desnessessaria*/
+}
+
+.caixa_externa_1{
+    display: flex;
+    
+    
+}
+.header{
+    height: 100vh;
+    padding: 5px;
+    text-align: center;
+    color: var(--COR-AZUL);       
+}
+
+.header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.3em;
+
+}
+
+.header .menu{
+    font-weight: bold;
+    margin-top: 10vw;
+    font-size: 1.2em;
+}
+
+.menu li + li{
+    margin-top: 10px;
+}
+
+
+
+.menu li a{
+    text-decoration: none;
+    color: var(--COR-AZUL-CLARO);
+}
+
+.menu li a:hover{
+    color: var(--COR-AZUL);
+}
+.Logo{
+    width: 140px;
+    padding-top: 20px;
+
+}
+.caixa_externa_2 iframe{
+    width: 75vw;
+    height: 100vh;
+
+}
+
+.header{
+    width: 25vw;
+}
