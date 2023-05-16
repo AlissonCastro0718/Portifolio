@@ -19,13 +19,11 @@
 }
 
 body{
-overflow-y: hidden;   /*tira um pequeno exesso que criava uma barra de rolagem desnessessaria*/
+    overflow-y: hidden;  /*tira um pequeno exesso que criava uma barra de rolagem desnessessaria*/
 }
 
 .caixa_externa_1{
     display: flex;
-    
-    
 }
 .header{
     height: 100vh;
