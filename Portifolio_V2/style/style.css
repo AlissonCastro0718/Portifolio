@@ -19,6 +19,7 @@
 }
 
 body{
+
     overflow-y: hidden;  /*tira um pequeno exesso que criava uma barra de rolagem desnessessaria*/
 }
 
@@ -26,6 +27,7 @@ body{
     display: flex;
 }
 .header{
+    border: 1px solid var(--COR-AZUL-CLARO);
     height: 100vh;
     padding: 5px;
     text-align: center;
