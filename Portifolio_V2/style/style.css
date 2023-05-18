@@ -64,6 +64,7 @@ body{
 .Logo{
     width: 140px;
     padding-top: 20px;
+    fill: var(--COR-AZUL);
 
 }
 .caixa_externa_2 iframe{
