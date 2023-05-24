@@ -11,7 +11,7 @@
 
 svg{
     width: 1em;
-    fill: rgba(0, 0, 0, 0.781);
+    fill: var(--COR-AZUL);
 }
 * , body{
     scroll-behavior: smooth;
@@ -24,6 +24,45 @@ svg{
 
 img{
     width: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-box{       
+    background-color:#a9a9a9;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.grid-box p {
+    color: black
+}
+
+.imagens-projetos{
+    padding-top: 20px;
+    width: 80%;
+    
+}
+.css{
+    color: blue;
+}
+.html{
+    color: orangered;
+}
+.botao{
+    color: white;
+    background-color: var(--COR-AZUL-CLARO);
+    border-radius: 10px;
+    padding: 10px;    
+    
+}
+
+.botao a{
+    text-decoration: none;
+    
 }
 
 h1 ,h2 {
