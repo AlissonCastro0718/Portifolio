@@ -13,8 +13,12 @@ svg{
     width: 1em;
     fill: var(--COR-AZUL);
 }
-* , body{
+
+body{
     scroll-behavior: smooth;
+    background: white;
+}
+* , body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,6 +36,7 @@ img{
     margin: auto;
     border-radius:10px ;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3,1fr);
 
 }
@@ -39,7 +44,7 @@ img{
     margin: 10px;
     padding: 10px;       
     background-color:white;
-    width: 350px;
+    max-width: 350px;
     height: 510px;
     border-radius: 10px;
     transition: all .1s ease-in;
@@ -49,30 +54,47 @@ img{
 
 }
 
-
 .grid-box:hover{
     transform: translate(-5px,-5px);
     box-shadow:4px 5px 4px 0px rgba(0, 0, 0, 0.329);
+}
+
+.grid-box h3{
+    text-align: center;
+    color: var(--COR-AZUL);
+
 }
 
 .grid-box p {
     font-size: 1.1em;
     color: black;
     text-align: justify;
-    
-
 }
 
 .imagens-projetos{
     border-radius: 10px;    
 }
 .css{
-    color: blue;
+    color: white;
+    background: #2929e7;
+    font-weight: normal;
+    padding: 2px;
+    border-radius:3px;
 }
 .html{
-    color: orangered;
+    color: white;
+    background: #ff4500;
+    font-weight: normal;
+    padding: 2px;
+    border-radius:3px;
 }
-
+.JS{
+    color: rgb(255, 255, 255);
+    background: #ced102;
+    font-weight: normal;
+    padding: 2px;
+    border-radius:3px;
+}
 
 .ul-botoes {
     display: flex;
@@ -87,6 +109,7 @@ img{
     width: 50%;
     border-radius: 10px;
     margin: auto;
+    transition: all .2s ease-in-out;
 }
 .botao:hover{
     background: var(--COR-AZUL);
@@ -142,4 +165,26 @@ ul{
 .page2-ul{
     margin-left: 50px;
     color: var(--COR-AZUL-CLARO);
+}
+@media (max-width:1040px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-box{
+        max-width: 500px;
+    }
+
+}
+@media (max-width:700px) {
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        justify-items: center;
+        
+    }
+    .grid-box{
+        margin: 10px calc(auto - 10px);
+        max-width: 500px;
+        max-height: none;
+    }
 }
