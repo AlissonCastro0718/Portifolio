@@ -9,25 +9,74 @@
 
 }
 
-svg{
-    width: 1em;
-    fill: var(--COR-AZUL);
+* , body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;    
+
 }
 
 body{
     scroll-behavior: smooth;
     background: white;
 }
-* , body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;    
-}
-
 
 img{
     width: 100%;
+}
+.Logo{
+    padding-top: 5px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    fill: white;
+    background: var(--COR-AZUL);
+}
+
+.header h1{
+    padding: 0px;
+}
+
+.header h1,.header p,.header a{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+    color: white;
+    text-indent: 0px;
+}
+
+.nome{
+    display:flex;
+}
+
+.header svg{
+    width: 100px;
+    height: 90%;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;  
+    gap: 30px;  
+}
+
+.header a {
+    text-decoration: none;
+}
+.header li{
+    transition: .1s ease-in-out;
+}
+
+.header li:hover{
+    border-bottom: none;
+    transform: translateY(-5px);
+    border-bottom: 2px solid white;
+
 }
 
 .grid-container{
@@ -73,6 +122,11 @@ img{
 
 .imagens-projetos{
     border-radius: 10px;    
+}
+
+.svg-github{
+    width: 1em;
+    fill: var(--COR-AZUL);
 }
 .css{
     color: white;
@@ -166,6 +220,10 @@ ul{
     margin-left: 50px;
     color: var(--COR-AZUL-CLARO);
 }
+
+
+
+
 @media (max-width:1040px) {
     .grid-container{
         grid-template-columns: repeat(2,1fr);
