@@ -26,10 +26,12 @@ img{
     width: 100%;
 }
 .Logo{
+    
     padding-top: 5px;
 }
 .header{
     position: sticky;
+    z-index: 2;
     top: 0;
     display: flex;
     align-items: center;
@@ -52,6 +54,7 @@ img{
 
 .nome{
     display:flex;
+    max-height: 90px;
 }
 
 .header svg{
@@ -223,13 +226,13 @@ footer p {
 }
 
 .footer-index p{
-    width: 100vw;
+    width: 100%;
     border: none;
     padding: 0;
     margin: 0;
     background: var(--COR-AZUL);
     color: white;
-    outline: 4px solid var(--COR-AZUL);
+    outline: 4\px solid var(--COR-AZUL);
 
 }
 
