@@ -79,7 +79,43 @@ img{
     border-bottom: none;
     transform: translateY(-5px);
     border-bottom: 2px solid white;
+}
 
+
+.menu-burguer{
+    display: none;
+}
+
+.lista-mobile{
+    background: white;
+    text-align: end;
+    position: fixed;
+    width: 70%;
+    top: 0;
+    right:0;
+    display: none;
+}
+.lista-mobile li{
+    list-style: none;
+    border: 1px solid var(--COR-AZUL);
+    height: 90px;
+    padding-right: 10px;
+    line-height: 90px;
+    
+    
+}
+
+.lista-mobile svg{
+    width: 50px;
+    vertical-align: middle;
+    fill: var(--COR-AZUL);
+}
+
+.lista-mobile a{
+    padding: 15px;
+    text-decoration: none;
+    color: var(--COR-AZUL);
+    font-weight: 700;
 }
 
 .grid-container{
@@ -259,8 +295,15 @@ footer p {
         max-height: none;
     }
 }
-/* 822pxs do menu */
+@media (max-width:822px){
+    .menu-burguer{
+        display: block;
+        height: 50px;
+        cursor: pointer;
+    }
+    .lista-de-botoes{
+        display: none;
+    }
 
-.lista-de-botoes{
-    
 }
+
