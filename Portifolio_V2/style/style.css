@@ -46,15 +46,14 @@ img{
     padding: 0px;
 }
 
-.header h1,.header p,.header a{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
+.header h1,.header p,.header a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.534);
     color: white;
     text-indent: 0px;
 }
 
 .nome{
     display:flex;
-    max-height: 90px;
 }
 
 .header svg{
@@ -65,7 +64,20 @@ img{
     display: flex;
     list-style: none;
     align-items: center;  
-    gap: 30px;  
+    gap: 30px;
+    margin-right: 20px;  
+}
+
+.header-texto{
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-texto p{
+    padding: 0px;
+    
 }
 
 .header a {
@@ -80,7 +92,6 @@ img{
     transform: translateY(-5px);
     border-bottom: 2px solid white;
 }
-
 
 .menu-burguer{
     display: none;
@@ -295,14 +306,19 @@ footer p {
         max-height: none;
     }
 }
-@media (max-width:822px){
+@media (max-width:842px){
+
+    .header-texto{
+        font-size: 1.1em;
+    }
+
+    .lista-de-botoes{
+        display: none !important;
+    }
     .menu-burguer{
-        display: block;
+        display: block ;
         height: 50px;
         cursor: pointer;
-    }
-    .lista-de-botoes{
-        display: none;
     }
 
 }

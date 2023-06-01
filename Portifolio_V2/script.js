@@ -1,9 +1,9 @@
 function openmenu(){
-    if(listadebotoes.style.display == 'block'){
-        listadebotoes.style.display = 'none'
-    }else{
-        listadebotoes.style.display = 'block'
-    }
-
+    listamobile.style.display = 'block'
+    header.style.display = 'none'
+}
+function closemenu(){
+    listamobile.style.display = 'none'
+    header.style.display = 'flex'
 
 }
