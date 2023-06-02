@@ -44,9 +44,25 @@
 
     <div><img src="../images/main-image-pages.jpg" alt="Minha Foto"></div>
     <main>
-       <h1>Meus contatos</h1>
-        
+       <h1>Fale comigo(em produção)</h1>
+      <div class="grid-area-page3"> 
+          <form action="contato.php" autocomplete="on" method="post" class="form">
+              <p class="form-p">
+                <label for="Inome">Nome</label> <br>
+                <input type="text" name="nome" id="Inome" required placeholder="" autocomplete="name"> <br>
+                <label for="Iemail">Email</label> <br>
+                <input type="email" name="email" id="Iemail" required  autocomplete="email"> <br>
+                <label for="Imsg">Mensagem</label> <br>
+                <textarea name="msg" id="Imsg" cols="30" rows="10"></textarea> <br>
+          
+                <input type="submit" value="Enviar(desativado)" disabled>
+            </p>
+            </form>
+
+            <div class="conta"></div>
+      </div>
     </main>
 </body>
+<footer><p>Desenvolvido por Alisson Castro</p></footer>
 <script src="../../script.js"></script>
 </html>
