@@ -4,8 +4,11 @@
 /* Fonte Open-Sans */
 
 :root{
-    --COR-AZUL:#1F4E51 ;
-    --COR-AZUL-CLARO: #437477;
+
+    /* #1f4e51 */
+    --COR-AZUL:#2B303A;
+    /* #437477 */
+    --COR-AZUL-CLARO: #4f586b;
 
 }
 
@@ -257,15 +260,31 @@ ul{
 }
 
 .form input{
-    width: 300px;
+    width: 40vw;
     height: 2em;
     margin-bottom:15px;
 
 }
-
-.form-p textarea{
+.form textarea{
     resize: none;
-    width: 300px;
+    width: 40vw;
+}
+
+.form input , .form textarea{
+    border: .5px solid var(--COR-AZUL);
+}
+.form input , .form textarea:on{
+    color: white;
+    background: var(--COR-AZUL-CLARO);
+}
+.flex-page3{
+    display: flex;
+    margin: auto;
+}
+
+.contatos p{
+    text-indent: 0px;
+    fill: var(--COR-AZUL);
 }
 
 footer p {
@@ -313,6 +332,9 @@ footer p {
         max-height: none;
     }
 }
+
+
+
 @media (max-width:842px){
 
 
@@ -336,5 +358,17 @@ footer p {
         max-width: 100vw;
         font-size: .8em;
 
+    }
+}
+
+@media (max-width:678px) {
+    .flex-page3{
+        display: block;
+    }
+    .contatos p{
+        font-size: 19px;
+    }
+    .form textarea ,.form input{
+        width: 75vw;
     }
 }
