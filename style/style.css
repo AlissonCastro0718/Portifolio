@@ -4,12 +4,8 @@
 /* Fonte Open-Sans */
 
 :root{
-
-    /* #1f4e51 */
     --COR-AZUL:#2B303A;
-    /* #437477 */
     --COR-AZUL-CLARO: #4f586b;
-
 }
 
 * , body{
@@ -17,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;    
-
 }
 
 body{
@@ -29,7 +24,6 @@ img{
     width: 100%;
 }
 .Logo{
-    
     padding-top: 5px;
 }
 .header{
@@ -57,6 +51,20 @@ img{
 
 .nome{
     display:flex;
+    animation: entrada 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.lista-de-botoes{
+    animation: entrada 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes entrada{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .header svg{
@@ -96,8 +104,10 @@ img{
     border-bottom: 2px solid white;
 }
 
+
 .menu-burguer{
     display: none;
+    animation: entrada 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .lista-mobile{
@@ -105,11 +115,26 @@ img{
     text-align: end;
     position: fixed;
     width: 70%;
+    height: 100%;
     top: 0;
     right:0;
     display: none;
     z-index: 2;
+    user-select: none; /* para mascarar seleções no menu mobile */
+    -moz-user-select: none; /* para Firefox */
+    -webkit-user-select: none; /* para Chrome, Safari e Opera */
+    -ms-user-select: none; /* para Internet Explorer/Edge */
+    animation: slide .7s cubic-bezier(0.075, 0.82, 0.165, 1) ;
 }
+
+@keyframes slide{
+from{
+    transform: translatex(70%);        
+}
+to{
+    transform: translatex(0%);   
+
+}}
 .lista-mobile li{
     list-style: none;
     border: 1px solid var(--COR-AZUL);
@@ -273,10 +298,7 @@ ul{
 .form input , .form textarea{
     border: .5px solid var(--COR-AZUL);
 }
-.form input , .form textarea:on{
-    color: white;
-    background: var(--COR-AZUL-CLARO);
-}
+
 .flex-page3{
     display: flex;
     margin: auto;
