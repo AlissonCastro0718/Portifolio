@@ -176,18 +176,13 @@ to{
     padding: 10px;       
     background-color:white;
     max-width: 350px;
-    height: 510px;
+    min-height: 510px;
     border-radius: 10px;
     transition: all .1s ease-in;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-}
-
-.grid-box:hover{
-    transform: translate(-5px,-5px);
-    box-shadow:4px 5px 4px 0px rgba(0, 0, 0, 0.329);
 }
 
 .grid-box h3{
@@ -199,7 +194,7 @@ to{
 .grid-box p {
     font-size: 1.1em;
     color: black;
-    text-align: justify;
+    text-align: center;
 }
 
 .imagens-projetos{
@@ -215,11 +210,9 @@ to{
     color: white;
     font-weight: normal;
     padding: 2px;
-    border-radius:3px;
+    border-radius:5px;
 }
-.css{background: #2929e7;}
-.html{background: #ff4500;}
-.JS{background: #ced102;}
+.html{background: #ff4500;} .css{background: #2929e7;} .JS{background: #ced102;}
 
 .ul-botoes {
     display: flex;
@@ -259,7 +252,7 @@ p a{
 }
 
 p a:hover{
-    color: var(--COR-AZUL);
+    color: #5972a8;
 }
 
 p{
@@ -297,6 +290,7 @@ ul{
 
 .form input , .form textarea{
     border: .5px solid var(--COR-AZUL);
+    border-radius:5px;
 }
 
 .flex-page3{
@@ -307,8 +301,14 @@ ul{
 .contatos p{
     text-indent: 0px;
     fill: var(--COR-AZUL);
+
 }
 
+.botao-desabilitado{
+    background: var(--COR-AZUL-CLARO);
+    color: white;
+    
+}
 footer p {
     width: 90vw;
     margin: auto;
@@ -344,18 +344,16 @@ footer p {
 @media (max-width:700px) {
     .grid-container{
         grid-template-columns: repeat(1,1fr);
-        width: 100%;
+        width: 90%;
         justify-items: center;
         
     }
     .grid-box{
         margin: 10px calc(auto - 10px);
-        max-width: 500px;
-        max-height: none;
+        max-width: 400px;
+        
     }
 }
-
-
 
 @media (max-width:842px){
 
@@ -388,7 +386,7 @@ footer p {
         display: block;
     }
     .contatos p{
-        font-size: 19px;
+        font-size: 17px;
     }
     .form textarea ,.form input{
         width: 75vw;
